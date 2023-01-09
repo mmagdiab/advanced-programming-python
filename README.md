@@ -1,5 +1,5 @@
-> :warning: **Caution:** the problems solved in this repo weren't revised,  
-**Feel free to contribute to this repo with your optimized solutions.**
+> :warning: **Caution:** solutions in this repo weren't revised,  
+**Feel free to contribute to this repo with your optimized ones.**
 
 This repository includes solutions of a set of selected problems from the book   
 [A Practical Introduction to Python Programming by Brian Heinold](https://www.brianheinold.net/python/A_Practical_Introduction_to_Python_Programming_Heinold.pdf), in addition to some problems from advanced programming course (SCE411E) taught in Faculty of Engineering, Al-Azhar University, Egypt.
