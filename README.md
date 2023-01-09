@@ -1,4 +1,4 @@
-> :warning: **Caution:** the problems solved in this repo wasn't revised,  
+> :warning: **Caution:** the problems solved in this repo weren't revised,  
 **Feel free to contribute to this repo with your optimized solutions.**
 
 This repository includes solutions of a set of selected problems from the book   
