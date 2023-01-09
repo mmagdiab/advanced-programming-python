@@ -1,5 +1,4 @@
 import random
-from random import shuffle
 class Groups:
     def __init__(self, group_teams):
         self.group_teams = group_teams
@@ -57,12 +56,11 @@ for i in range(4):
 for i in range(8):
     # Randomly select the teams for the group
     group_teams = []
-    while len(group_teams) < 4:
-        for j in range(4):
-            team = random.choice(Classification[j])
-            if team not in group_teams:
-                group_teams.append(team)
-                Classification[j].remove(team)
+    for j in range(4):
+        team = random.choice(Classification[j])
+        if team not in group_teams:
+            group_teams.append(team)
+            Classification[j].remove(team)
     print(group_teams)
     group = Groups(group_teams)
     groups.append(group)
