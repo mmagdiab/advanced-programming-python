@@ -58,10 +58,8 @@ for i in range(8):
     group_teams = []
     for j in range(4):
         team = random.choice(Classification[j])
-        if team not in group_teams:
-            group_teams.append(team)
-            Classification[j].remove(team)
-    print(group_teams)
+        group_teams.append(team)
+        Classification[j].remove(team)
     group = Groups(group_teams)
     groups.append(group)
 
