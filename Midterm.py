@@ -1,4 +1,5 @@
 import random
+from random import shuffle
 class Groups:
     def __init__(self, group_teams):
         self.group_teams = group_teams
@@ -39,17 +40,30 @@ League = {}
 
 for i in range(32):
     team = "Team " + str(i+1)
-    rate = str(random.randint(1, 100))
+    rate = random.randint(1, 100)
     League[team] = rate
 
 # Sort the teams in ascending order of their levels
 sorted_teams = sorted(League, key=League.get)
-
 # Create a list of objects "groups" of type "Groups"
 groups = []
+Classification = []
+for i in range(4):
+    #Distribution of teams into 4 groups based on their levels
+    group = random.sample(sorted_teams[i * 8:(i + 1) * 8], 8)
+    Classification.append(group)
+
+
 for i in range(8):
     # Randomly select the teams for the group
-    group_teams = random.sample(sorted_teams[i * 4:(i + 1) * 4], 4)
+    group_teams = []
+    while len(group_teams) < 4:
+        for j in range(4):
+            team = random.choice(Classification[j])
+            if team not in group_teams:
+                group_teams.append(team)
+                Classification[j].remove(team)
+    print(group_teams)
     group = Groups(group_teams)
     groups.append(group)
 
