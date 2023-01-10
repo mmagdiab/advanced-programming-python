@@ -19,4 +19,4 @@ This repository includes solutions of a set of selected problems from the book [
 | Chapter 13    | [Functions](Chapter_13_Functions)                                                                               |
 | Chapter 14    | [Object Oriented Programming](Chapter_14_Object_Oriented_Programming)                                           |
 | GUI Exercises | [GUI exercises](GUI_exercises)                                                                                  |
-| Additions     | [Midterm (2022/23)](Midterm.py)<br/>       [Quiz 1 (2022/23)](quiz_1.py)<br/>     [Quiz 2 (2022/23)](quiz_2.py) |
+| Additions     | [Midterm (2022/23)](midterm.py)<br/>       [Quiz 1 (2022/23)](quiz_1.py)<br/>     [Quiz 2 (2022/23)](quiz_2.py) |
