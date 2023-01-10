@@ -55,7 +55,7 @@ def calculate_age(today_date, birth_date):
 today = input('Enter today\'s date in the format dd-mm-yyyy: ')
 birth = input('Enter birth date in the format dd-mm-yyyy: ')
 
-today = TodayDate(int(today[6:]), int(today[3:5]), int(today[:2]))
+today = TodayDate(int(today[6:]), int(today[3:5]), int(today[:2]))  # Or better use split.
 birth = BirthDate(int(birth[6:]), int(birth[3:5]), int(birth[:2]))
 
 calculate_age(today, birth)

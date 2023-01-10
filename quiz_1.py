@@ -16,7 +16,7 @@ questions_bank = eval(input('Enter questions list:'))
 answers_bank = eval(input('Enter corresponding answers list:'))
 wrong_bank = eval(input('Enter wrong choices list:'))
 
-random_question = sample(questions_bank, 5)
+random_question = sample(questions_bank, 5)  # Or get random 5 indexes -> sample(range(len(question_bank)), 5)
 
 mcq_exam = [{  # each question -> {'question': value, 'answer': value, 'choices': value}
     'question': question,

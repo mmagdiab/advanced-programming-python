@@ -1,3 +1,26 @@
+"""
+league process is The FIFA world cup supposed to go through many phases. One of them is the world cup group league
+which is explained in the following lines.
+According to FIFA classification a collection of 32 teams will contribute the league.
+Each team is assigned an evaluation level, and the teams are sorted in ascending order due to that level.
+They will then be distributed into 8 groups. Each group is composed of 4 teams. Each group will play 6 games.
+Accounts of teams will count up three points in case of winning, one point in case of draw, and zero in case of loosing.
+Accordingly, two teams of each group will qualify for the 16_teams league (16). Write Python code to do the following:
+a) Create a Python class "Groups" that contain the following attributes and functions:
+- A list "group_teams" of the teams in a group.
+- A list "group_games" of games that will be played by the groups teams with the results of the games associated
+to the game.
+- A list "group_points" of points collected by teams in a group.
+- A function "results" to read the results of each game from the keyboard and store them in the suitable list.
+- A function "selection" to sort teams in a group and select the two qualified teams and store them in a global list
+"16_teams_league_list".
+b) Read the names of the 32 teams with associated levels in python dictionary "League", sort them accordingly.
+c) Create a list of objects "groups" of type "Groups" Then randomly distribute the first 8 teams to 8 object groups in
+the list. Afterwards, distribute the second 8 teams the same way, and so on.
+d) Read the results of the games from the keyboard and store them in their suitable places.
+e) Select the qualified teams, store them into "16_teams_league" list and print them.
+"""
+
 import random
 class Groups:
     def __init__(self, group_teams):
