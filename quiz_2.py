@@ -28,7 +28,7 @@ class BirthDate(Date):
 def calculate_age(today_date, birth_date):
     years_alive = today_date.year - birth_date.year
     months_alive = today_date.month - birth_date.month
-    days_alive = today_date.month - birth_date.month
+    days_alive = today_date.day - birth_date.day
 
     if days_alive < 0:
         if months_alive > 0:  # Break 1 month into days

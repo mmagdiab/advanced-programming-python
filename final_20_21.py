@@ -49,18 +49,19 @@ Your program must contain two different functions for encryption and decryption.
 
 
 def encrypt(message):
-    return message[::2] + message[1::2]
+    return message[1::2] + message[::2]
 
 
 def decrypt(encrypted_message):
-    if len(encrypted_message) < 3: # Must be at least 3 char
-        return encrypted_message
     message_half = len(encrypted_message)//2
     decrypted_message = ''
+    first_term = encrypted_message[:message_half]
+    second_term = encrypted_message[message_half:]
     for i in range(message_half):
-        decrypted_message += encrypted_message[i] + encrypted_message[message_half+1+i]
+        decrypted_message += second_term[i] + first_term[i]
     # if the message is odd, at the char exactly in the middle
-    decrypted_message += encrypted_message[message_half]
+    if len(encrypted_message) % 2 == 1:
+        decrypted_message += second_term[-1]
     return decrypted_message
 
 
@@ -100,7 +101,7 @@ class BirthDate(Date):
 def calculate_age(today_date, birth_date):
     years_alive = today_date.year - birth_date.year
     months_alive = today_date.month - birth_date.month
-    days_alive = today_date.month - birth_date.month
+    days_alive = today_date.day - birth_date.day
 
     if days_alive < 0:
         if months_alive > 0:  # Break 1 month into days
