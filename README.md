@@ -1,8 +1,7 @@
 > :warning: **Caution:** solutions in this repo weren't revised,  
 **Feel free to contribute to this repo with your optimized ones.**
 
-This repository includes solutions of a set of selected problems from the book   
-[A Practical Introduction to Python Programming by Brian Heinold](https://www.brianheinold.net/python/A_Practical_Introduction_to_Python_Programming_Heinold.pdf), in addition to some problems from advanced programming course (SCE411E) taught in Faculty of Engineering, Al-Azhar University, Egypt.
+This repository includes solutions of a set of selected problems from the book [A Practical Introduction to Python Programming by Brian Heinold](https://www.brianheinold.net/python/A_Practical_Introduction_to_Python_Programming_Heinold.pdf), in addition to some problems from advanced programming course (SCE411E) taught in Faculty of Engineering, Al-Azhar University, Egypt.
 
 ### Contents
 | Topic         | Links                                                                                                           |
@@ -15,6 +14,7 @@ This repository includes solutions of a set of selected problems from the book
 | Chapter 6     | [Strings](Chapter_6_Strings)                                                                                    |
 | Chapter 7     | [Lists](Chapter_7_Lists)                                                                                        |
 | Chapter 8     | [More With Lists](Chapter_8_More_With_Lists)                                                                    |
+| Chapter 12    | [Text Files](Chapter_12_Text_Files)                                                                             |
 | Chapter 13    | [Functions](Chapter_13_Functions)                                                                               |
 | Chapter 14    | [Object Oriented Programming](Chapter_14_Object_Oriented_Programming)                                           |
 | GUI Exercises | [GUI exercises](GUI_exercises)                                                                                  |
