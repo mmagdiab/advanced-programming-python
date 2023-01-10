@@ -20,8 +20,10 @@ the list. Afterwards, distribute the second 8 teams the same way, and so on.
 d) Read the results of the games from the keyboard and store them in their suitable places.
 e) Select the qualified teams, store them into "16_teams_league" list and print them.
 """
-
+from itertools import combinations
 import random
+
+
 class Groups:
     def __init__(self, group_teams):
         self.group_teams = group_teams
@@ -32,6 +34,10 @@ class Groups:
 
     def results(self):
         # Read the results of each game from the keyboard and store them in the suitable list
+
+        # for generating matches you can use combinations instead
+        # self.group_games = [[c[0], c[1]] for c in combinations(self.group_teams, 2)]
+
         for i in range(4):
             for j in range(i+1, 4):
                 # Generate a random result for the game between the two teams
@@ -71,7 +77,7 @@ sorted_teams = sorted(League, key=League.get)
 groups = []
 Classification = []
 for i in range(4):
-    #Distribution of teams into 4 groups based on their levels
+    # Distribution of teams into 4 groups based on their levels
     group = random.sample(sorted_teams[i * 8:(i + 1) * 8], 8)
     Classification.append(group)
 
@@ -100,4 +106,3 @@ for group in groups:
 
 # Print the qualified teams
 print(_16_teams_league_list)
-
