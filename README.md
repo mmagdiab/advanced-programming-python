@@ -14,6 +14,7 @@ This repository includes solutions of a set of selected problems from the book [
 | Chapter 6     | [Strings](Chapter_6_Strings)                                                                                    |
 | Chapter 7     | [Lists](Chapter_7_Lists)                                                                                        |
 | Chapter 8     | [More With Lists](Chapter_8_More_With_Lists)                                                                    |
+| Chapter 11    | [Dictionaries](Chapter_11_Dictionaries)                                                                         |
 | Chapter 12    | [Text Files](Chapter_12_Text_Files)                                                                             |
 | Chapter 13    | [Functions](Chapter_13_Functions)                                                                               |
 | Chapter 14    | [Object Oriented Programming](Chapter_14_Object_Oriented_Programming)                                           |
