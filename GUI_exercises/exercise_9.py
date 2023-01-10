@@ -13,13 +13,13 @@ def callback(event):
     if choice.get() == 'GCD':
         gcd = 1
         for i in range(2, min(m, n)+1):
-            if m % i == 0 and m % i == 0:
+            if m % i == 0 and n % i == 0:
                 gcd = i
         label_result.configure(text="GCD(m, n) = " + str(gcd))
     elif choice.get() == 'LCM':
         lcm = -1
         for i in range(max(m, n), m*n + 1):
-            if i % m == 0 and i % m == 0:
+            if i % m == 0 and i % n == 0:
                 lcm = i
                 break
         label_result.configure(text="LCM(m, n) = " + str(lcm))
