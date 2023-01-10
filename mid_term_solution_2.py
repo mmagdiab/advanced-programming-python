@@ -53,7 +53,7 @@ class Groups:
                 self.group_points[self.group_teams.index(team_1)] += 1
                 self.group_points[self.group_teams.index(team_2)] += 1
 
-        teams = sorted(self.group_teams, key=lambda x: self.group_points[x], reverse=True)
+        teams = sorted(self.group_teams, key=lambda team: self.group_points[self.group_teams.index(team)], reverse=True)
         _16_teams_league_list += teams[:2]
 
 # b
